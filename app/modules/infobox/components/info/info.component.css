@@ -1,0 +1,32 @@
+.alertcomponent {
+    position: fixed;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%; 
+    background-color: grey; 
+    width: 100%;
+    top:0;
+    left:0; 
+    opacity:0.5; 
+    z-index:1000;
+}
+
+.awindow{
+    position: fixed;
+    width: 350px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -25px;  
+    z-index:1001;
+}
+
+.test{
+    background-color:#6b273e; 
+    color:#fff; 
+    border-top:2px solid #fff; 
+    border-bottom:2px solid #fff; 
+    font-size:15px;
+    padding:0px 10px 0px 10px;
+}

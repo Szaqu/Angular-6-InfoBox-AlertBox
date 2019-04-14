@@ -1,0 +1,33 @@
+<div [hidden]="!infoBox['show']">
+  <div class="alertcomponent"></div>
+
+  <div *ngIf="infoBox['status']; then info_ok else info_error"></div>
+  <ng-template #info_error>
+    <div class="awindow">
+      <div class="alert alert-success">
+        <div class="test">
+          <p style="float:right;" (click)="closeinfoBox()">
+            <i class="fas fa-times"></i>
+          </p>
+          <p style="margin-right:40px;">
+            <i class="fas fa-exclamation-triangle" style="font-size:22px;"></i> {{infoBox['message']}} . . .
+          </p>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #info_ok>
+    <div class="awindow">
+      <div class="alert alert-success">
+        <div class="test">
+          <p style="float:right;" (click)="closeinfoBox()">
+            <i class="fas fa-times"></i>
+          </p>
+          <p style="margin-right:40px;">
+            <i class="fas fa-check" style="font-size:22px;"></i> {{infoBox['message']}} . . .
+          </p>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>
